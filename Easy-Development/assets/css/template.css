@@ -1,0 +1,117 @@
+/*Reset*/
+* a, * a:hover{text-decoration: none!important;}
+* li{list-style-type: none;}
+audio, img, iframe, video{
+    display: inline-block;
+    height: auto;
+    width: 100%;
+}
+/************
+Global Class
+************/
+.cardi,
+.main,
+.menu,
+.wrap{
+    display: flex;
+}
+.menu,
+.wrap,
+.cardi{
+    flex-direction: column;
+}
+.menu .logo,
+.cardi{
+    background-image: linear-gradient( 89.5deg,  rgba(51,102,153,1) 6.8%, rgba(102,51,153,1) 100.2% );
+    color: #fff;
+}
+/**********
+Local Class
+**********/
+/*cards*/
+.cardi{
+    border-radius: 5px;
+    padding: .5rem 1rem;
+}
+@media(min-width: 768px){
+    .cardi{flex-direction: row;}
+}
+/*main*/
+.main{
+    flex-direction: column;
+}
+@media(min-width: 768px){
+    .main{flex-direction: row;}
+}
+/*menu*/
+.menu{
+    background-color: #fff;
+    flex-direction: row;
+    width: 100%;
+}
+.menu .logo{
+    display: none;
+    padding: 15px 1rem;
+}
+.menu .logo h2{
+    font-size: 1.4rem;
+    text-transform: uppercase;
+}
+.menu .links{
+    display: none;
+}
+.menu .links li{
+    padding: 10px 0;
+    width: 100%;
+}
+.menu .links li a{
+    color: rgb(105, 105, 107);
+    font-size: .94rem;
+    font-weight: 600;
+}
+@media(min-width: 768px){
+    .menu{
+        box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.06);
+        flex-direction: column;
+        min-height: 100vh;
+        width: 18%;
+        z-index: 1;
+    }
+    .menu .logo{display: block;}
+    .menu .links{
+        display: block;
+        padding: 15px 1rem;
+    }
+}
+/*topo*/
+.topo{
+    background-color: #fff;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.03);
+    min-height: 65px;
+    max-height: 65px;
+    position: relative;
+}
+.topo .actions{
+    position: absolute;
+    right: 1rem;
+}
+.topo .actions li{
+    display: inline-block;
+    padding: 12px 10px;
+}
+.topo .actions li a{
+    color: #333;
+}
+@media(min-width: 768px){
+    .topo .actions{
+        
+    }
+    .topo .actions li{
+        padding: 7px 10px;
+    }
+}
+/*Sections*/
+.wrap{
+    background-color: #eee;
+    width: 84%;
+}
