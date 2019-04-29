@@ -30,6 +30,7 @@ Local Class
 **********/
 /*cards*/
 .cardi{
+    box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.06);
     border-radius: 5px;
     padding: .5rem 1rem;
 }
@@ -74,7 +75,7 @@ Local Class
         box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.06);
         flex-direction: column;
         min-height: 100vh;
-        width: 18%;
+        width: 21%;
         z-index: 1;
     }
     .menu .logo{display: block;}
@@ -104,7 +105,7 @@ Local Class
 }
 @media(min-width: 768px){
     .topo .actions{
-        
+        right: 1rem;
     }
     .topo .actions li{
         padding: 7px 10px;
@@ -114,4 +115,7 @@ Local Class
 .wrap{
     background-color: #eee;
     width: 84%;
+}
+.wrap .content .container{
+    padding: 1rem;
 }
